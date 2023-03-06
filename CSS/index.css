@@ -6,6 +6,7 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,
 html,body {
     margin:0;
     padding:0;
+    
 }
 table {
     border-collapse:collapse;
@@ -46,13 +47,14 @@ html{
 }
 header{
     width: 100%;
-    border: 2px solid gray;
+    
 }
 .container{
     max-width: 1280px;
     width: 100%;
     margin: 0 auto;
     display: block;
+    background-image: url(../Assets/bg.jpg);
 }
 .logo {
     height: 100%;
@@ -63,16 +65,18 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
-   
+    background-image: url(../Assets/2152.jpg);
+    background-size: cover;
 }
 .menu-item{
     text-decoration: none;
     border: 1px solid #f8b501;
     padding: 4px 10px;
-    margin: 2px;
+    margin: 5px;
     background-color: #f8b501;
     color: black;
-    border-radius: 10%
+    border-radius: 5px
+
 }
 .hero-title {
     display: flex;
@@ -81,6 +85,8 @@ header{
     align-items: center;
     padding: 50px;
     row-gap: 40px;
+    border-top: 2px solid gray;
+    
 }
 .hero-title > h1 {
     font-size: 40px;
@@ -135,6 +141,7 @@ header{
 }
 .about-information > h6{
     padding-bottom: 20px;
+    text-align: justify;
 }
 .information-list{
     display: flex;
@@ -149,13 +156,13 @@ header{
 .list-number {
     background-color: rgb(213, 212, 212);
     color: white;
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    font-size: 24px;
+    font-size: 19px;
 }
 .list-content{
     color: gray;
@@ -187,17 +194,28 @@ form {
     flex-direction: column;
     gap: 20px;
 }
-.input {
-   display: flex;
-   flex-direction: column; 
-}
-input{
-    border: 1px solid #b0b0b0;
+.input{
     padding: 3px 5px 4px;
     color: #979797;
     width: 100%;
     height: 30px;
+    display: flex;
+    flex-direction: column;
 }
 select{
     height: 30px;
+}
+.submit{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.submit > .submit-input {
+    justify-content: center;
+    display: flex;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #f8b501;
+    color: black;
 }
